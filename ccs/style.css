@@ -1,0 +1,304 @@
+* {
+    
+    margin: 0;
+}
+
+
+.cabecera{
+    /* background: red; */
+    width: 100%;
+    height: 100px;
+
+}
+
+/* Logo */
+.header-logo {
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+
+/* Menu */
+
+.header-menu {
+    width: 100px;
+    left: auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem 0 2.5rem 1rem;
+}
+
+.header-menu ul {
+    list-style: none;
+}
+
+
+.header-menu a {
+    text-decoration: none;
+    color: black;
+    color: ;
+
+}
+
+.header-menu a:hover {
+    /* color: #FF263F; */
+}
+
+
+.header-menu li {
+    float: left;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: larger;
+}
+
+/* .Menu{
+       background: rgb(255, 251, 0); 
+       width: 100%;
+       height: 100px;
+   
+} */
+
+.Cuerpo{
+        /* background: rgb(0, 255, 213); */
+        width: 100%;
+        /* height: calc(100vh - 100px); */
+        min-height: calc(100vh - 200px);
+
+   
+}
+
+
+.Sec1{
+    /* background: rgb(0, 38, 255); */
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+
+.Contenedor{
+    /* background: rgb(13, 14, 13); */
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.ContenedorE{
+    /* background: rgb(13, 14, 13); */
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.Sec2{
+    /* background: rgb(255, 0, 212); */
+    width: 50%; 
+    height: 100%;
+    margin-left: 5%;
+    text-align: justify;
+    font-size: large;
+
+
+}
+
+.Sec3{
+    /* background: rgb(221, 120, 204);  */
+    width: 50%;
+    height: 100%;
+    margin-left: 5%;
+
+}
+
+.Sec4{
+    /* background: rgb(221, 120, 204);  */
+    width: 50%;
+    height: 100%;
+    margin-left: 5%;
+    text-align: justify;
+    font-size: large;
+
+
+}
+
+.Pie{
+    /* background: rgb(77, 74, 74); */
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+}
+
+.etapas{
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-between;
+  /* background: red ; */
+  margin: 4%;
+}
+
+
+.opcion{
+  display: grid;
+  grid-template-areas: 
+  "titulo"
+  "item";
+  grid-column: 100% auto;
+  grid-template-rows: 25% auto;
+  gap: 1em;
+  margin-right: 2em;
+  width: calc(33.33%-2em);
+
+
+}
+
+
+/* Formulario */
+
+
+.Formulario{
+    /* background: rgb(13, 14, 13); */
+    width: 100%;
+    height: 60%;
+    margin: 20px;
+    border: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #ab4493; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #ab4493; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: #ab4493; 
+  border-color: #ab4493; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+  color: #fff; 
+}
+
+
+span{
+  color: #ab4493; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+/* 
+h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #ab4493;
+}
+
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+ */
+
+/* p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+} */
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+
