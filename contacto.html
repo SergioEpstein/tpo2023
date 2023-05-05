@@ -7,32 +7,35 @@
     <title>Instituto de programacion</title>
     <link rel="shortcut icon" href="/img/imagen1.jpg" type="imagen1">
     <link rel="stylesheet" href="/ccs/style.css">
+
 </head>
-<body>
-
-    <header class="cabecera">
+<body class="grid-body">
+    <header class="grid-cabecera">
         <div class="header-logo"> <a href="index.html"><img src="img/logo.jpg" alt=""></a></div>
-        <nav class="header-menu">
-            <ul>
-                <li> <a href="index.html">Inicio </a></li>
-                <li><a href="etapas.html">Etapas</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contactenos</a></li>
-            </ul>
-        </nav>
-
+        <div class="header-menu">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio </a></li>
+                    <li><a href="etapas.html">Etapas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contactenos</a></li>
+                    <li><a href="donde.html">Donde estamos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main class="Cuerpo">
-    
+
+ 
+   <div class="grid-container-formulario">
+      <main class="Cuerpo">
+      
         <section class="Formulario">
             <br>
-            <br>
-            <br>
+
 
             <h1>Formulario de contacto</h1>
             <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
     
-            <br>
             <br>
 
               <form action="" method="post">       
@@ -78,14 +81,21 @@
                 <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
 
                 <p class="aviso">
-                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                  <span class="obligatorio"> * los campos son obligatorios. </span>
                 </p>          
             
           </form>
 
 
         </section>
-    </main>
-    <footer class="Pie">
-         <a href="contacto@elmaejor.com">contacto@elmaejor.com</a>
+    
+    <footer class="footer">
+        <a href="contacto@elmaejor.com">contacto@elmaejor.com</a>
     </footer>
+  </main>
+    </div>
+    
+    
+</body>
+
+</html>
