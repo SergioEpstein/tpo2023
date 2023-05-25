@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto de programacion</title>
-    <link rel="shortcut icon" href="/img/imagen1.jpg" type="imagen1">
+    <link rel="shortcut icon" href="/img/logo.jpg" type="imagen1">
     <link rel="stylesheet" href="/ccs/style.css">
 
 </head>
@@ -20,6 +20,7 @@
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contactenos</a></li>
                     <li><a href="donde.html">Donde estamos</a></li>
+                    <li><a href="mejor.html">Mejores Alumnos</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,64 +39,84 @@
     
             <br>
 
-              <form action="" method="post">       
+              <form action="" class="formulario" id="formulario">
     
-                <p>
-                  <label for="nombre" class="colocar_nombre">Nombre
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                </p>
-                <br>             
+                <!-- Grupo: Nombre -->
+                <div class="formulario__grupo" id="grupo__nombre">
+                  <label for="nombre" class="formulario__label">Nombre</label>
+                  <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Jose PEREZ">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                  <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                </div>
               
-                <p>
-                  <label for="email" class="colocar_email">Email
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                </p>
-                <br>             
+                <!-- Grupo: Correo Electronico -->
+                <div class="formulario__grupo" id="grupo__correo">
+                  <label for="correo" class="formulario__label">Correo Electrónico</label>
+                  <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                  <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                </div>
             
-                <p>
-                  <label for="telefone" class="colocar_telefono">Teléfono
-                  </label>
-                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>    
-                <br>             
-                <p>
-                  <label for="asunto" class="colocar_asunto">Asunto
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                </p>    
-                <br>             
-              
-                <p>
-                  <label for="mensaje" class="colocar_mensaje">Mensaje
-                    <span class="obligatorio">*</span>
-                  </label>                     
-                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                </p>                    
-                <br>             
-              
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                <!-- Grupo: Teléfono -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                  <label for="telefono" class="formulario__label">Teléfono</label>
+                  <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="381-7899210">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                  <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                </div>
 
-                <p class="aviso">
-                  <span class="obligatorio"> * los campos son obligatorios. </span>
-                </p>          
-            
+                <!-- Grupo: Asunto -->
+                <div class="formulario__grupo" id="grupo__asunto">
+                  <label for="asunto" class="formulario__label">Asunto</label>
+                  <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="asunto" id="asunto" placeholder="Quiero saber sobre...">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                  <p class="formulario__input-error">El asunto tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                </div>
+
+                <!-- Grupo: Mensaje -->
+                <div class="formulario__grupo" id="grupo__mensaje">
+                  <label for="asunto" class="formulario__label">Mensaje</label>
+                  <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="mensaje" id="mensaje" placeholder="Los curson presenciales...">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                  </div>
+                  <p class="formulario__input-error">El mensaje tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                  <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                </div>
+          
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                  <button type="submit" class="formulario__btn">Enviar</button>
+                  <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                </div>
+             
           </form>
 
 
         </section>
-    
+  
+      </main>  
+      
     <footer class="footer">
         <a href="contacto@elmaejor.com">contacto@elmaejor.com</a>
     </footer>
-  </main>
-    </div>
+
     
-    
+
+  
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script src="/script/script.js"></script>  
+      
 </body>
 
 </html>

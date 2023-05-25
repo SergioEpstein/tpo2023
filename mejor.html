@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto de programacion</title>
-    <link rel="shortcut icon" href="/img/logo.jpg" type="imagen1">
+    <link rel="shortcut icon" href="/img/imagen1.jpg" type="imagen1">
     <link rel="stylesheet" href="/ccs/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
 </head>
-<body class="grid-body">
+<body class="grid-body" onload="mejoresalumnos()">
     <header class="grid-cabecera">
         <div class="header-logo"> <a href="index.html"><img src="img/logo.jpg" alt=""></a></div>
         <div class="header-menu">
@@ -25,30 +25,37 @@
                     <li><a href="mejor.html">Mejores Alumnos</a></li>
                 </ul>
             </nav>
-            </div>
+        </div>
     </header>
 
-    <div class="grid-container-donde">
-    
-        <section class="tit1">
-                <br>
-                <h1 class="animate__animated animate__bounce">Veni a visitarnos !!!!!</h1>
-                <br>
-                <br>
-                <br>
-        </section>
-        
-        <section class="map">
-            <div style="width: 100%">
-              <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=torre%20eiffei+(Instituto%20%22El%20Mejor%22)&amp;t=h&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a>
-              </iframe>
+    <div class="grid-container-mejor">
+        <heder class="tm">
+            <h1 class="animate__animated animate__bounce">Algunos de nuestros mejores alumnos</h1>
+        </heder>
+
+        <div class="m1">
+            
+            <br>
+            
+            <div class="mt-5" id="contenido">
+                <div>
+                    <!-- <img class="foto" id="foto" src="/img/logo.jpg"> -->
+                    <div id="fotoalumno" class="fotoalumno">
+                            <img id="foto" src="/img/logo.jpg" > 
+                    </div>
+                    <p class="alumno" id="alumno"> sss</p>
+                    <p class="alumnoEmail" id="alumnoEmail"></p>
+            
+                </div>
+            
             </div>
-        </section>
-    
+
+        </div>
+ 
         <footer class="footer">
             <a href="contacto@elmaejor.com">contacto@elmaejor.com</a>
         </footer>
-
+        <script src="/script/script.js"></script>  
     </div>
 </body>
 </html>
