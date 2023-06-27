@@ -18,6 +18,7 @@ body {
 
 .grid-body {
   display: grid;
+  
 }
 
 /* cabecera */
@@ -57,24 +58,32 @@ body {
 /* principal index */
 
 .grid-container-index > * {
-  /* box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  /* box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75); */
   border-radius: 4px;
-  padding: 10px; */
-  text-align: center;
+  padding: 10px; 
+  text-align: justify;
 }
 
 .titulo {
   grid-area: titulo;
   background-color:white;
+  text-align: center;
 }
 
 .a1 {
   grid-area: a1;
   background-color: white;
+  font-size: 1em;
+  line-height: 1.5em;
+
+
 }  
 .a2 {
   grid-area: a2;
   background-color: white;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 2%;
 }
 
 .footer {
@@ -83,8 +92,6 @@ body {
   text-align: center;
 }
 
-
-
 .grid-container-index {
   display: grid;
   gap: 10px;
@@ -92,7 +99,7 @@ body {
       "titulo" min-content
       "a1" 30%
       "a2" 30%
-      "footer" auto; 
+      "footer" 30px; 
 } 
 
 
@@ -101,9 +108,9 @@ body {
     min-height: max-content;
     grid-template:
       "titulo"  20%
-      "a1" 60%
-      "a2" 60%
-      "footer"  20% 
+      "a2" auto
+      "a1" auto
+      "footer"  30px 
   }
 }
 
@@ -112,8 +119,8 @@ body {
     min-height: max-content;
     grid-template:
       "titulo titulo"  20%
-      "a1 a2" 60%
-      "footer footer"  20% 
+      "a1 a2" auto
+      "footer footer"  30px 
   }
 }
 
@@ -122,8 +129,8 @@ body {
     min-height: max-content;
     grid-template:
       "titulo titulo"  20%
-      "a1 a2" 60%
-      "footer footer"  20% 
+      "a1 a2" auto
+      "footer footer"  30px
   }
 }
 
@@ -166,25 +173,46 @@ body {
 /* principal etapas */
 
 .grid-container-etapas > * {
-  /* box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 4px;
-  padding: 10px; */
-  text-align: center;
+  /* box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75); */
+  border-radius: 10px;
+  padding: 10px; 
+
+  /* text-align: center; */
 }
+.te{
+  font-size:larger;
+  width: 100%;
+}
+.tituloColumna{
+  text-align: center;
+  align-content: center;
+  
+}
+
 
 
 .ae1 {
   grid-area: ae1;
-  background-color: #f5f5f5;
+  background-color: white;
+  text-align: justify;
+  border-left: 10px; 
+  border-right: 10px;
 }  
 .ae2 {
   grid-area: ae2;
-  background-color: #f5f5f5;
+  background-color: white;
+  text-align: justify;
+  border-left: 10px; 
+  border-right: 10px;
+
 }
 
 .ae3 {
   grid-area: ae3;
-  background-color: #f5f5f5;
+  background-color: white;
+  text-align: justify;
+  border-left: 10px; 
+  border-right: 10px;
 }
 
 
@@ -198,13 +226,35 @@ body {
     "footer"; 
 } 
 
-@media (min-width: 600px) {
+@media (min-width: 360px) {
   .grid-container-etapas {
+    min-height: max-content;
+    grid-template:
+      "ae1" auto
+      "ae2" auto
+      "ae3" auto
+      "footer"  40px 
+  }
+}
+
+@media (min-width: 720px) {
+  .grid-container-etapas {
+    min-height: max-content;
     grid-template:
       "ae1 ae2"
       "ae3 ae3"
-      "footer footer"  auto 
+      "footer footer"  40px
   } 
+}
+
+@media (min-width: 1200px) {
+  .grid-container-etapas {
+    min-height: max-content;
+    max-width: 100%;
+    grid-template:
+      "ae1 ae2 ae3" auto
+      "footer footer footer"  40px
+  }
 }
 
 
@@ -228,7 +278,9 @@ body {
   grid-area: Descripcion;
   background-color: white;
   /* display: flex; */
-  text-align: center;
+  text-align: justify;
+  margin-right: 10%;
+  margin-left: 10%;
 
 }  
 
@@ -237,8 +289,8 @@ body {
   gap: 10px;
   grid-template:
   "titulo-nosotros" auto
-  "Descripcion" 60%
-  "footer" 20%; 
+  "Descripcion" auto
+  "footer" 30px; 
 } 
 
 @media (min-width: 600px) {
@@ -247,24 +299,33 @@ body {
   background-color: white;
     grid-template:
       "titulo-nosotros" 30%
-      "Descripcion" 50%
-      "footer" 20%;
+      "Descripcion" auto
+      "footer" 30px;
   } 
 }
 
 /* Formulario */
 
 .grid-container-formulario > * {
-  /* box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  /* box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75); */
   border-radius: 4px;
-  padding: 10px; */
+  padding: 10px; 
   text-align: center;
 }
 
 .Cuerpo{
   grid-area: Cuerpo;
-  background-color: #f5f5f5;
+  background-color: write;
 }  
+
+.grid-container-formulario {
+  display: grid;
+  gap: 10px;
+  grid-template:
+      "Cuerpo" auto
+      "footer" 30px; 
+} 
+
 
 /*----------------------------------*/
 
@@ -273,6 +334,8 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .formulario__label {
@@ -359,7 +422,7 @@ body {
 	height: 45px;
 	line-height: 45px;
 	width: 30%;
-	background: #000;
+	background: #130303;
 	color: #fff;
 	font-weight: bold;
 	border: none;
@@ -403,9 +466,21 @@ body {
 
 
 /* ----- -----  Mediaqueries ----- ----- */
-@media screen and (max-width: 800px) {
+/* @media screen and (max-content: 800px) { */
+@media (max-width: 800px) {
+
+  .grid-container-formulario {
+
+
+      min-height: max-content;
+      grid-template:
+        "Cuerpo" auto
+        "footer"  30px 
+    }
+  
+
 	.formulario {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr
 	}
 
 	.formulario__grupo-terminos, 
@@ -417,45 +492,40 @@ body {
 	.formulario__btn {
 		width: 100%;
 	}
+
 }
 
 /*-----------------------------------*/
 
 
-.grid-container-formulario {
-  display: grid;
-  gap: 10px;
-  grid-template:
-  "Cuerpo" 80%
-  "footer" auto; 
-} 
 
-@media (min-width: 600px) {
+
+/* @media (min-width: 600px) {
   .grid-container-formulario {
     grid-template:
       "Cuerpo" auto
-      "footer" 20%; 
+      "footer" 30px; 
   } 
-}
+} */
 
 
 /* Donde */
 
 .grid-container-donde > * {
-  /* box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  /* box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75); */
   border-radius: 4px;
-  padding: 10px; */
+  padding: 10px;
   text-align: center;
 }
 
-.tit1{
+.tit1 {
   grid-area: tit1;
-  background-color: #f5f5f5;
+
 }  
+
 
 .map {
   grid-area: map;
-  background-color: #f5f5f5;
 }  
 
 .grid-container-donde {
@@ -463,8 +533,8 @@ body {
   gap: 10px;
   grid-template:
     "tit1" 10%
-    "map" 60%
-    "footer" 10%; 
+    "map" auto
+    "footer" 30px; 
 } 
 
 @media (min-width: 600px) {
@@ -472,7 +542,7 @@ body {
     grid-template:
       "tit1" 10%
       "map" auto
-      "footer" auto;
+      "footer" 30px;
   } 
 }
 
@@ -502,9 +572,10 @@ body {
   display: grid;
   gap: 10px;
   grid-template:
-      "tm" min-content
-      "m1" 30%
-      "footer" auto; 
+      "tm" 20%
+      "m1" 100%
+      "footer" 30px; 
+
 } 
 
 
@@ -524,7 +595,7 @@ body {
     grid-template:
       "tm"  20%
       "m1" 60%
-      "footer"  20% 
+      "footer"  30px
   }
 }
 
